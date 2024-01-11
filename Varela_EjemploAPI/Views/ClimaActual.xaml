@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Varela_EjemploAPI.Views.ClimaActual"
+             Title="ClimaActual">
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="10" Padding="20">
+
+            <Label 
+                Text="Latitud:"/>
+
+            <Border Padding="10" >
+                <Entry  x:Name="Lat" />
+            </Border>
+
+            <Label 
+                Text="Longitud:"/>
+
+            <Border Padding="10">
+                <Entry  x:Name="Long"/>
+            </Border>
+
+            <Button Text="Consultar" Clicked="ButtonConsultar_Clicked"/>
+            <Label Text="Resultado:"  />
+
+            
+            <Image HorizontalOptions="Start" WidthRequest="70" HeightRequest="70" x:Name="Imagen" />
+            <Label x:Name="ValorClima" FontSize="Medium" FontAttributes="Bold"/>
+
+            <Label x:Name="ValorUbicacion" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
